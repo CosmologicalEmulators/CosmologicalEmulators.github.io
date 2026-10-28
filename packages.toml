@@ -1,0 +1,65 @@
+# Order also defines navigation order. Do not add an unpublished version.
+[[packages]]
+name = "ACE.jl"
+repo = "AbstractCosmologicalEmulators.jl"
+path = "ace"
+versions = ["dev"]
+description = "Shared emulator interfaces, interpolation, AD and analytic backgrounds."
+
+[[packages]]
+name = "Capse.jl"
+repo = "Capse.jl"
+path = "capse"
+versions = ["stable", "dev"]
+description = "CMB angular power spectrum emulators."
+
+[[packages]]
+name = "Mapse.jl"
+repo = "Mapse.jl"
+path = "mapse"
+versions = ["stable", "dev"]
+description = "Matter power spectrum emulators and nonlinear prescriptions."
+
+[[packages]]
+name = "Effort.jl"
+repo = "Effort.jl"
+path = "effort"
+versions = ["stable", "dev"]
+description = "Effective-field-theory large-scale-structure emulators."
+
+[[packages]]
+name = "EmulatorsTrainer.jl"
+repo = "EmulatorsTrainer.jl"
+path = "trainer"
+versions = ["stable", "dev"]
+description = "Dataset generation, emulator training, validation and artifacts."
+
+# MkDocs sites stay upstream; these links are not in the shared search index.
+[[external]]
+name = "jaxace"
+url = "https://cosmologicalemulators.github.io/jaxace/stable/"
+
+[[external]]
+name = "jaxcapse"
+url = "https://cosmologicalemulators.github.io/jaxcapse/stable/"
+
+[[external]]
+name = "jaxeffort"
+url = "https://cosmologicalemulators.github.io/jaxeffort/stable/"
+
+# No publicly working documentation site verified yet: link source, not a 404.
+[[source_only]]
+name = "jaxmapse"
+repo = "jaxmapse"
+
+[[source_only]]
+name = "CosmoRec.jl"
+repo = "CosmoRec.jl"
+
+[[source_only]]
+name = "HMCode.jl"
+repo = "HMCode.jl"
+
+[[source_only]]
+name = "emulator-zoo"
+repo = "emulator-zoo"

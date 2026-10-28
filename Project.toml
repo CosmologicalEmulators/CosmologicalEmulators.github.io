@@ -1,0 +1,9 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+MultiDocumenter = "87ed4bf0-c935-4a67-83c3-2a03bee4197c"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[compat]
+Documenter = "1"
+MultiDocumenter = "=0.8.1"
+julia = "1.12"
