@@ -10,7 +10,7 @@ that search index.
 
 ## Where to start
 
-- **ACE.jl** (`AbstractCosmologicalEmulators.jl`): the shared runtime layer,
+- **AbstractCosmologicalEmulators.jl**: the shared runtime layer,
   interpolation, automatic differentiation and analytic backgrounds.
 - **Capse.jl**: CMB power spectrum emulation.
 - **Mapse.jl**: matter power spectrum emulation and nonlinear calculations.
@@ -24,9 +24,14 @@ This hub mirrors published HTML and adds common navigation and search; it does
 not rebuild the scientific packages or redefine their APIs.
 
 Where available, **stable** is the default and **dev** remains accessible in the
-package version selector. ACE currently has only a published **dev** manual.
+package version selector. AbstractCosmologicalEmulators.jl currently has only a published **dev** manual.
 Search indexes stable when present, otherwise dev, to avoid duplicate results.
 Use **See All Versions** to return to the upstream package's complete version history.
+
+The Python/JAX links are versioned independently. For jaxace, choose **stable**
+for released documentation or **dev** for the current development API, including
+the neutrino thermal-prescription guide. A development guide is not a claim
+that the corresponding API is present in the latest release.
 
 The hub refreshes daily and can be rebuilt manually. Publication happens only
 after the aggregate passes validation. The snapshot below records which deployed

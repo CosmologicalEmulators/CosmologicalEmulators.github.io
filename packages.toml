@@ -1,6 +1,6 @@
 # Order also defines navigation order. Do not add an unpublished version.
 [[packages]]
-name = "ACE.jl"
+name = "AbstractCosmologicalEmulators.jl"
 repo = "AbstractCosmologicalEmulators.jl"
 path = "ace"
 versions = ["dev"]
@@ -36,8 +36,12 @@ description = "Dataset generation, emulator training, validation and artifacts."
 
 # MkDocs sites stay upstream; these links are not in the shared search index.
 [[external]]
-name = "jaxace"
+name = "jaxace (stable)"
 url = "https://cosmologicalemulators.github.io/jaxace/stable/"
+
+[[external]]
+name = "jaxace (dev)"
+url = "https://cosmologicalemulators.github.io/jaxace/dev/"
 
 [[external]]
 name = "jaxcapse"

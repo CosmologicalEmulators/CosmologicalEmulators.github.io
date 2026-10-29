@@ -120,6 +120,22 @@ class AggregateTests(unittest.TestCase):
         self.assertFalse(any(p.is_symlink() for p in BUILD.rglob("*")), "Pages artifacts cannot contain symlinks")
         self.assertFalse(any(p.name == ".git" for p in BUILD.rglob("*")))
 
+    def test_neutrino_guide_is_searchable(self):
+        self.assertTrue(any(e["ref"].startswith("/ace/dev/neutrinos/")
+                            for e in self.index))
+
+    def test_public_names_and_jax_versions(self):
+        package = next(p for p in CONFIG["packages"]
+                       if p["repo"] == "AbstractCosmologicalEmulators.jl")
+        self.assertEqual(package["name"], "AbstractCosmologicalEmulators.jl")
+        external = {p["name"]: p["url"] for p in CONFIG["external"]}
+        home = (BUILD / "home/dev/index.html").read_text()
+        for version in ("stable", "dev"):
+            url = f"https://cosmologicalemulators.github.io/jaxace/{version}/"
+            self.assertEqual(external[f"jaxace ({version})"], url)
+            self.assertIn(url, home)
+        self.assertNotIn("ACE.jl", home)
+
     def test_real_search_engine(self):
         subprocess.run(["node", str(ROOT / "test_search.cjs")], check=True, cwd=ROOT)
 
